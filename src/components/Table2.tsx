@@ -1,9 +1,9 @@
 import React from "react";
 import "./Table.css";
-import { TableProps } from "@mantine/core";
+import { CustomTableProps } from "../utils/types";
 import useTable2 from "../utils/hooks/useTable2";
 
-const Table2: React.FC<TableProps> = ({ data }) => {
+const Table2: React.FC<CustomTableProps> = ({ data }) => {
   // Use custom hook to get table data
   const tableData = useTable2(data);
 
